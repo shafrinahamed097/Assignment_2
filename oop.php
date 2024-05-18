@@ -42,7 +42,7 @@ class Member {
 
     public function borrowBook($book) {
         if ($book->borrowBook()) {
-            echo $this->name . " borrowed " . $book->getTitle() . "\n";
+             $this->name . " borrowed " . $book->getTitle() . "\n";
         } else {
             echo $this->name . " could not borrow " . $book->getTitle() . " because no copies are available\n";
         }
